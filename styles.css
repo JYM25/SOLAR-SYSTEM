@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+}
+
+main{
+  background:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(/Thumbnail/photo-1537420327992-d6e192287183.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.sun{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 213, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 30px 20px rgba(255, 162, 0, 0.63);
+}
+
+.sun *{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-orbit{
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgb(76, 75, 75);
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+}
+
+.second-orbit{
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgb(76, 75, 75);
+  border-radius: 50%;
+  animation: spin 20s linear infinite;
+}
+
+.third-orbit{
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  border: 2px solid rgb(76, 75, 75);
+  border-radius: 50%;
+  animation: spin 30s linear infinite;
+  z-index: 1;
+}
+
+.moon-orbit{
+   background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 50%;
+  animation: moon-spin 5s linear infinite;
+}
+
+.fourth-orbit{
+  background-color: transparent;
+  width: 600px;
+  height: 600px;
+  border: 2px solid rgb(76, 75, 75);
+  border-radius: 50%;
+  animation: spin 40s linear infinite;
+}
+
+.fifth-orbit{
+  background-color: transparent;
+  width: 700px;
+  height: 700px;
+  border: 2px solid rgb(76, 75, 75);
+  border-radius: 50%;
+  animation: spin 60s linear infinite;
+}
+
+.mercury{
+  left: 0%;;
+  width: 30px;
+  height: 30px;
+  background-color: #3D3635;
+  border-radius: 50%;
+   box-shadow: 0 0 15px 5px rgba(255, 162, 0, 0.63);
+}
+
+.venus{
+  top: 80%;
+  left: 10%;
+  width: 45px;
+  height: 45px;
+  background-color: #F2F0DF;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px grey;
+}
+
+.earth{
+  top: 10%;
+  left: 20%;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgb(7, 114, 201);
+}
+
+.moon{
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  left: 0%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px grey;
+  z-index: 100;
+}
+
+.mars{
+  top: 30%;
+  left: 4%;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgb(96, 9, 9);
+}
+
+.jupiter{
+  left: 0%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 153, 102);
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgb(226, 134, 21);
+}
+
+@keyframes spin{
+  from{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes moon-spin{
+  from{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes space{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
