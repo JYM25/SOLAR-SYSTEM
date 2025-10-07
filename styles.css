@@ -9,7 +9,7 @@ body{
 }
 
 main{
-  background:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(/Thumbnail/photo-1537420327992-d6e192287183.avif);
+  background:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(/Thumbnail/milkyway.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -178,6 +178,7 @@ main{
     background-position: 0% 50%;
   }
 }
+
 
 
 
